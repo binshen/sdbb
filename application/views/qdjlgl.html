@@ -1,0 +1,111 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+<meta name="viewport" content="width=device-width,initial-scale=1.0,maximum-scale=1.0,user-scalable=no" />
+<link href="{$base_url}css/hh_khjlgljm.css" rel="stylesheet" type="text/css"/>
+<link href="{$base_url}css/hh_common.css" rel="stylesheet" type="text/css"/>
+<link href="{$base_url}css/hh_xzqdjl.css" rel="stylesheet" type="text/css"/>
+<script src="{$base_url}js/jquery-v1.10.2.min.js" type="text/javascript"></script>
+<script src="{$base_url}js/easydialog.min.js"></script>
+<link rel="stylesheet" href="{$base_url}css/easydialog.css"/>
+<title>渠道经理管理</title>
+</head>
+<body>
+
+
+<div class="popup hd" id="add_qdjl">
+  <div class="top_d">添加渠道经理
+    <div class="cls"><a href="javascript:easyDialog.close();"><img src="{$base_url}images/cls1.png"/></a></div>
+  </div>
+  <div class="cntnt">
+  <form method="post" action="{site_url url='admin/save_qdjl'}" id="form_add">
+      <input id="rel_name" name="rel_name" type="text" value="姓名" {literal}onfocus="if(this.value=='姓名'){this.value=''}"{/literal} class="input1"/>
+      <input id="username" name="username" type="text" value="手机号码" {literal}onfocus="if(this.value=='手机号码'){this.value=''}"{/literal} class="input1"/>
+      <input type="hidden" name="id" />
+      <input type="button"  class="input2" value="提交" onclick="save_qdjl();"/>
+    <div class="clr"></div>
+  </form>
+  </div>
+</div>
+
+
+
+
+
+<div class="rtn"><a href="{site_url url='admin'}"><img src="{$base_url}images/back.png" /></a></div>
+<div class="top">渠道经理管理</div>
+<div class="add"><a href="javascript:add_qdjl();"> 新建渠道经理</a></div>
+	{foreach from=$data item=row}
+	<a href="javascript:;" onclick="s_h_menu(this)"><div class="jllb"><div class="arr_b4"><img src="{$base_url}images/arr_b3.png"/></div><span class="spancss2" style="text-indent:27px" >{$row.rel_name}</span><span class="spancss2"> {$row.username}</span> </div></a>
+	<ul class="xm hd">
+	<li></li>
+	</ul>
+	<div class="scjl hd"><a href="javascript:edit_qdjl('{$row.id}');">修改经理 </a></div>
+{/foreach}
+<script>
+function s_h_menu(obj){
+	if(!$(obj).next().is(":hidden")){
+		$(obj).next().slideUp(300);
+		$(obj).next().next().slideUp(300);
+	}else{
+		$(".xm").hide();
+		$(".scjl").hide();
+		$(obj).next().slideDown(300);
+		$(obj).next().next().slideDown(300);
+	}
+}
+
+function add_qdjl(id){
+	$("[name='id']").val('');
+	easyDialog.open({
+		container : 'add_qdjl',
+		fixed : false
+	});
+}
+
+function save_qdjl(){
+	if(!$("[name='rel_name']").val() || $("[name='rel_name']").val() =='姓名'){
+		alert('请输入姓名！');
+		return;
+	}
+	if(!$("[name='username']").val() || $("[name='username']").val() =='手机号码'){
+		alert('请输入手机号码！');
+		return;
+	}
+	{literal}var re = /^1\d{10}$/;{/literal}
+	if (!re.test($("[name='username']").val())) {
+		alert('手机号码格式错误！');
+		return false;
+	}
+	$("#form_add").submit();
+}
+
+function edit_qdjl(id){
+	$.getJSON("{site_url url='admin/get_qdjl'}/"+id,function(data){
+		$("[name='id']").val(data.id);
+		$("#username").val(data.username);
+		$("#rel_name").val(data.rel_name);
+		easyDialog.open({
+			container : 'add_qdjl',
+			fixed : false
+		});
+	});
+}
+
+function save_qdjl_edit(){
+	var i = 0;
+	$("#edit_qdjl [name='project_id[]']").each(function(){
+		if($(this).is(":checked")){
+			i++;
+		}
+	});
+	if(i == 0){
+		alert('请至少选择一个项目');
+		return false;
+	}
+	$("#form_edit").submit();
+}
+</script>
+</body>
+</html>

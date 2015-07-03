@@ -1,0 +1,95 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta content='width=device-width, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0, user-scalable = no' name='viewport'/>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+<link href="{$base_url}css/nav_bottom.css" rel="stylesheet" type="text/css"/>
+<title>工具-房猫经纪人触屏版</title>
+</head>
+<body>
+<div id="page">
+	<div class="scroll">
+		<section id="J_Nav" class="header">
+		<!-- head -->
+		<div class="head">
+			<div class="head-in" id="J_headNav">
+				<div class="logo">
+					<a href="#!/today" data-spm-anchor-id="a2141.7240237.100000.2">
+					<s></s>
+					</a>
+				</div>
+				<div class="naver1">
+                 {if $rel_name}
+                 	<span class="login01"><b>欢迎您：{$rel_name}</b></span> 
+                 {else}
+                   <span class="login01"><a id="userLogin" href="{site_url url='login'}" style="font-size:14px; color:#ffffff; font-weight:bold; font-family:微软雅黑">登录</a></span>   
+                 {/if}
+                    
+                </div>
+				<div class="hd-menu">
+					<a class="btn-hd-menu"></a>
+				</div>
+			</div>
+		</div>
+		<div style="padding:20px 5px 0 0;">
+			<ul class="unstyled defaultlist pt20">
+				<li class="f">
+				<a href="{site_url url='tools/fangdai'}">
+				<h3>房贷计算器</h3>
+				<figure class="jp_icon"></figure>
+				</a>
+				</li>
+				<li class="h">
+				<a href="#">
+				<h3>税费计算器</h3>
+				<figure class="jd_icon"></figure>
+				</a>
+				</li>
+			</ul>
+			<ul class="unstyled defaultlist">
+				<li class="a">
+				<a href="#">
+				<h3>查房价</h3>
+				<figure class="hb_icon"></figure>
+				</a>
+				</li>
+				<li class="p">
+				<a href="#">
+				<h3> 房产政策</h3>
+				<figure class="mp_icon"></figure>
+				</a>
+				</li>
+			</ul>
+			<ul class="unstyled defaultlist">
+				<li class="t">
+				<a href="#">
+				<h3> 积分商城</h3>
+				<figure class="hcp_icon"></figure>
+				</a>
+				</li>
+				<li class="m">
+				<a href="#">
+				<h3> 帮助咨询</h3>
+				<figure class="wdxc_icon"></figure>
+				</a>
+				</li>
+			</ul>
+		</div>
+		<div id="J_TodayTMS">
+			<!--  Banner -->
+			<section id="J_TodayBanner">
+			<div class="banner">
+				<div class="in-slider ishide">
+					<div class="in-slider-cont">
+					</div>
+					<div class="in-slider-status" style="display: none;">
+					</div>
+				</div>
+			</div>
+			</section>
+			
+		</div>
+	</div>
+{include file="foot.html"}
+	</body>
+	</html>

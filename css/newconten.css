@@ -1,0 +1,58 @@
+/* CSS Document */
+
+*{ margin:0; padding:0; border:0;}
+img{ border:0;}
+body{ width:100%; height:auto;}
+
+.top-a{ width:1325px; height:24px; background:url(../news_images/altopbggg.png) no-repeat;font-family:"Î¢ÈíÑÅºÚ"; font-size:12px; font-weight:bold; }
+.ta-a{ width:1225px; height:24px; margin:0 auto;}
+.ta-a a{ text-decoration:none; color:#717171;}
+.a-a{ width:100px; height:24px; float:left; }
+.a-b{ width:25p7x; height:24px; float:right; text-align:right; line-height:23px;}
+.a-b ul{ list-style:none;}
+.a-b li{ float:left; display:inline;}
+.li-a{ margin-right:48px;}
+.li-b{ margin:auto 36px;}
+
+.top-b{ background:url(../news_images/altopbbbb.jpg) no-repeat; width:1325px; height:76px;}
+.top-b-a{width:290px; height:36px; border:solid 1px #cacaca; border-right:none; line-height:36px;font-family:"Î¢ÈíÑÅºÚ"; font-size:13px; color:#cacaca;vertical-align:middle;}
+.top-b-b{ width:338px;margin:0 auto; position:relative; top:20px; }
+
+.top-c{ width:1325px; height:35px; border-bottom:solid 3px #b81b2c;}
+.c-a{ width:1225px; height:35px; margin:0 auto; background:#000;}
+.c-b{ width:210px; height:35px; float:left; background:#b81b2c;}
+.c-b span{font-family:"ËÎÌå"; font-size:16px; font-weight:bold; color:#000; display:inline-block; height:20px; vertical-align:top; padding-top:12px;}
+.c-c{ width:855px; height:35px;float:left; list-style:none;}
+.c-c li{ display: inline-block;line-height: 30px; margin-left:20px;}
+.c-c li a{ font-family:"ËÎÌå"; font-size:14px; font-weight:bold; color:#fff; text-decoration:none;float:left;}
+
+.content{ width:1225px; height:auto; overflow:hidden; margin:50px auto;}
+.left{ width:260px; height:auto; float:left;overflow:hidden; margin-right:28px;}
+.left-a{ width:260px; height:28px; border:solid 1px #cacaca;}
+.left-m{ width:236px; height:171px; list-style:none; padding-left:24px; padding-top:20px; padding-bottom:25px; line-height:24px;}
+.left-m img{ margin-right:5px;}
+.left-m li a{ text-decoration:none;font-family:"Î¢ÈíÑÅºÚ"; font-size:12px; color:#a0a0a0; }
+.left-m li a:hover{ color:#b81b2c}
+
+.left-n{ width:260px; height:246px; list-style:none; line-height:38px;}
+.left-n li{ width:240px; height:38px;margin:0 auto;}
+.nn{ border-top: groove 1px #e4e4e4;}
+.left-n li a{ font-family:"Î¢ÈíÑÅºÚ"; font-size:12px; color:#a0a0a0; text-decoration:none;}
+.left-n a:hover{color:#b81b2c;}
+.left-n li img{ margin-left:2px; margin-right:5px;}
+
+
+.right{ width:935px; height:auto; float:left;overflow:hidden;}
+.right-a{ width:935px; height:17px; font-family:"Î¢ÈíÑÅºÚ"; font-size:14px; font-weight:bold; padding-bottom:10px; border-bottom:solid 4px #c9cbca;}
+.right-b{ width:905px; height:30px;background:url(../news_images/crightbg.png) no-repeat; border-radius: 0px 0px 8px 0px; behavior:url(PIE.htc); font-family:"Î¢ÈíÑÅºÚ"; font-size:16px; font-weight:bold;color:#fff; line-height:30px; padding-left:30px; margin:30px 0px 48px 0px;}
+.jss1{width:166px; height:96px; border: solid 1px #a0a0a0; padding:2px; float:left;}
+
+#righth{ width:935px; height:376px; margin-top:-20px;}
+#righth dt,dd{ width:935px;font-family:"Î¢ÈíÑÅºÚ"; font-size:12px; color:#a0a0a0;}
+#righth-a{ width:935px; height:14px; text-align:right;}
+#righth-a span{ color:red;}
+
+.right-f{ width:905px; height:30px; background:url(../news_images/crightbootom.png) no-repeat bottom; color:#b81b2c; font-family:"Î¢ÈíÑÅºÚ"; font-size:16px; font-weight:bold; padding-left:30px; margin-bottom:28px;}
+.right-bottom{ width:935px; height:230px;}
+.rbb{ width:177px; height:230px;font-family:"Î¢ÈíÑÅºÚ"; font-size:12px; color:#cacaca; text-align:center; float:left; margin-left:43px;}
+.rbb-a{ width:177px; height:230px;font-family:"Î¢ÈíÑÅºÚ"; font-size:12px; color:#cacaca; text-align:center; float:left; margin:0px;}

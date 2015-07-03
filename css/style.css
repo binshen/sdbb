@@ -1,0 +1,493 @@
+body {
+  font-family: '宋体';
+  font-size: 12px;
+  background-color: #fff;
+}
+
+a {
+  text-decoration: none;
+}
+
+a:hover {
+  text-decoration: underline;
+}
+
+form {
+  margin: 0;
+  padding: 0;
+}
+
+.clearfix {
+  clear: both;
+}
+
+#header {
+  width: 970px;
+  margin: 0 auto;
+  padding-bottom: 20px;
+}
+
+#header .logo {
+  float:left;
+  width: 300px;
+  height: 58px;
+  background: url(../images/logo.jpg) no-repeat;
+  margin-top: 28px;
+}
+
+#header .link {
+  float: right;
+  color: #656565;
+  padding-right: 15px;
+  padding-top: 70px;
+}
+
+#header .link a {
+  color: #656565;
+}
+
+#header .link a:hover {
+  color: #333;
+}
+
+#header .link .sep {
+  margin: 0 15px;
+}
+
+#body {
+  height: 535px;
+  position: relative;
+}
+
+#body .d1 {
+  width: 970px;
+  margin: 0 auto;
+  height: 100%;
+  position: relative;
+}
+
+#body .d11 {
+  width: 303px;
+  height: 276px;
+  margin-top: -138px; 
+  position: absolute;
+  top: 50%;
+  right: 16px;
+}
+
+#body .d12 {
+   width: 347px;
+   height: 310px;
+   position: absolute;
+   top: 115px;
+   right: 338px;
+}
+
+#body .d13 {
+  position: absolute;
+  top: 200px;
+  left: 13px;
+}
+
+#body .d14 {
+  position: absolute;
+  top: 61px;
+  left: 8px;
+}
+
+#body .d14 a {
+  display: block;
+  width: 314px;
+  height: 110px;
+  background: url(img/blank.png) no-repeat 0 0;
+  outline: 0;
+  blr: expression(this.onFocus=this.blur());
+}
+
+#body .d0 {
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 534px;
+  overflow: hidden;
+  text-align: center;
+}
+
+#footer {
+  text-align: center;
+  color: #a0a0a0;
+  padding-bottom: 35px;
+}
+
+#footer a{
+  color: #a0a0a0;
+}
+
+#footer .sep {
+  padding: 0 6px;
+}
+
+#footer .link {
+  padding-top: 40px;
+}
+
+#footer .info {
+  padding-top: 11px;
+}
+
+/*-----------------------------------------------------------------------------------------------------------------------------------*/
+
+#qrcode {
+  display: block;
+  width: 123px;
+  height: 148px;
+  background-color: #fff;
+  text-align: center;
+  color: #B1B1B1;
+  padding: 8px 6px;
+  outline: none;
+  blr: expression(this.onFocus=this.blur());
+}
+
+#qrcode:hover {
+  text-decoration: none;
+}
+
+#qrcode p {
+  border-top: 1px solid #B1B1B1;
+  margin: 4px 0 0 0;
+  padding-top: 5px;
+}
+
+#pics {
+  height: 534px;
+  background-color: #eee;
+}
+
+#pics .pic {
+  display: none;
+}
+
+#pics .pic div {
+  height: 534px;
+}
+
+/*-----------------------------------------------------------------------------------------------------------------------------------*/
+
+#inputs {
+  width: 100%;
+  height: 100%;
+  border-radius: 6px;
+  -moz-border-radius: 6px;
+  -webkit-border-radius: 6px;
+  background-color: rgba(255, 255, 255, 0.9);
+  filter: progid:DXImageTransform.Microsoft.gradient(enabled='true', startColorstr='#E5FFFFFF', endColorstr='#E5FFFFFF');
+}
+
+#inputs:nth-of-type(1n) {
+    filter: none\9;
+}
+
+#inputs .wrap {
+  padding: 40px 32px 0 32px;
+}
+
+.placeholder {
+  display: block;
+  width: 100%;
+  height: 42px;
+  line-height: 42px;
+  *line-height: 43px;
+  color: #ccc;
+  font-size: 14px;
+  cursor: text;
+  position: absolute;
+}
+
+#login .user label,
+#login .pw label,
+#login .user input,
+#login .pw input {
+  padding-left: 50px;
+  width: 187px;
+}
+
+
+#inputs .input {
+  width: 100%;
+  height: 20px;
+  line-height: 20px;
+  padding: 10px 0;
+  border: 1px solid #D7D7D7;
+  background-color: #fff;
+  font-size: 14px;
+  outline: none;
+  -moz-border-radius: 2px;
+  -webkit-border-radius: 2px;
+  border-radius: 2px;
+
+  -moz-transition: border-color .15s linear;
+  -webkit-transition: border-color .15s linear;
+  -o-transition: border-color .15s linear;
+  transition: border-color .15s linear;
+}
+
+#inputs .input-focus {
+  border-color: #fe0000;
+}
+
+#inputs .btns a {
+  display: inline-block;
+  width: 100%;
+  height: 35px;
+  line-height: 35px;
+  text-align: center;
+  font-size: 14px;
+  font-weight: bold;
+  -moz-border-radius: 3px;
+  -webkit-border-radius: 3px;
+  border-radius: 3px;
+  outline: none;
+}
+
+#inputs .btns a:hover {
+  text-decoration: none;
+}
+
+#login .user {
+  position: relative;
+}
+
+#login .user .icon {
+  position: absolute;
+  width: 27px;
+  height: 36px;
+  background: url(../img/icons.png) -5px -5px no-repeat;
+  top: 3px;
+  *top: 4px;
+  left: 14px;
+}
+
+#login .pw {
+  padding-top: 23px;
+  position: relative;
+}
+
+#login .pw .icon {
+  position: absolute;
+  width: 30px;
+  height: 36px;
+  background: url(../img/icons.png) -5px -50px no-repeat;
+  top: 26px;
+  *top: 27px;
+  left: 11px;
+}
+
+#login .pw-tip {
+  padding-top: 12px;
+  color: #efa079;
+}
+
+#login .other {
+  padding-top: 22px;
+  color: #a0a0a0;
+  line-height: 15px;
+}
+
+#login .remember {
+  float: left;
+}
+
+#login .remember input,
+#login .remember span {
+  vertical-align: middle;
+  cursor: pointer;
+}
+
+#login .remember input {
+  outline: 0;
+  blr: expression(this.onFocus=this.blur());
+  margin: 0 0 0 2px;
+  width: 13px;
+  height: 13px;
+  overflow: hidden;
+}
+
+#login .remember span {
+  margin-left: 6px;
+}
+
+#login .forget-pw a {
+  color: #a0a0a0;
+}
+
+#login .forget-pw {
+  float: right;
+}
+
+#login .btns {
+  padding-top: 18px;
+  overflow: hidden;
+}
+
+#login .btns .login,
+#pw .btns .save {
+  background-color: #FF5C24;
+  border: 0 none;
+  color: #FFFFFF;
+  
+  -moz-transition: background-color .15s linear;
+  -webkit-transition: background-color .15s linear;
+  -o-transition: background-color .15s linear;
+  transition: background-color .15s linear;
+}
+
+#login .btns .login:hover,
+#pw .btns .save:hover {
+  background-color: #FF4100; 
+}
+
+/* #login .btns a.reg {
+  background-color: #FFBCAA;
+  color: #f55732;
+  margin-left: 22px;
+} */
+
+#pw {
+  display: none;
+}
+
+#pw .title {
+  font-weight: bold;
+  color: #333333;
+  font-size: 14px;
+}
+
+#pw .pw1 {
+  padding-top: 20px;
+  position: relative;
+}
+
+#pw .pw2 {
+  padding-top: 25px;
+  position: relative;
+}
+
+#pw .placeholder,
+#pw .pw1 input,
+#pw .pw2 input {
+  padding-left: 10px;
+  width: 227px;
+}
+
+#pw .btns {
+  padding-top: 25px;
+}
+
+#goto {
+  display: none;
+}
+
+#goto .title {
+  padding-top: 62px;
+  padding-left: 16px;
+}
+
+#goto .title span {
+  display: inline-block;
+  height: 38px;
+  line-height: 38px;
+  background: url(img/icons.png) -5px -200px no-repeat;
+  color: #000000;
+  font-size: 14px;
+  font-weight: bold;
+  padding-left: 45px;
+}
+
+#goto .content {
+  padding-top: 15px;
+  padding-left: 60px;
+  color: #666;
+}
+
+/*-----------------------------------------------------------------------------------------------------------------------------------*/
+
+#tips .tip {
+  background-color: #fff;
+  border-radius: 3px;
+  -moz-border-radius: 3px;
+  -webkit-border-radius: 3px;
+  position: relative;
+  width: 339px;
+  display: none;
+}
+
+#tips .arrow {
+  width: 8px;
+  height: 23px;
+  background: url(img/icons.png) -5px -100px no-repeat;
+  position:absolute;
+  top: 46px;
+  right: -8px;
+  z-index: 100;
+  _display: none;
+}
+
+#tips .wrap {
+  padding: 15px 17px;
+}
+
+#tips .divide {
+  border-top: 2px solid #CBCBCB;
+  margin: 6px 0 8px 0;
+}
+
+#tips .title {
+  font-size: 14px;
+  font-weight: bold;
+  color: #666;
+  padding-left: 40px;
+  margin: 0 18px;
+  background: url(img/icons.png) -5px -150px no-repeat;
+  height: 35px;
+  line-height: 35px;
+}
+
+#tips .content {
+  color: #666;
+  margin: 0 18px;
+}
+
+#tips .content p {
+  padding: 0;
+  margin: 0;
+  line-height: 20px;
+}
+
+#tips .user {
+  top: 20px;
+}
+
+#tips .pw {
+  top: 83px;
+}
+
+#tips .pw1 .arrow,
+#tips .pw2 .arrow {
+  top: 19px;
+}
+
+#tips .pw1 .wrap,
+#tips .pw2 .wrap {
+  padding-bottom: 10px;
+  padding-right: 6px;
+}
+
+#tips .pw1 {
+  top: 80px;
+}
+
+#tips .pw2 {
+  top: 150px;
+}

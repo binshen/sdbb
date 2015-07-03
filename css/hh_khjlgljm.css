@@ -1,0 +1,34 @@
+.top{font-size:16px; font-weight:bold;line-height:48px;text-align:center; color:#FFF; padding:0 35px 14px 0;background:url(../images/bg_manager.png) repeat-x #FFF }
+.rtn{float:left; margin:17px 12px}
+.add{ background-color:#FFF; height:78px}
+.add a{ padding:50px 10px 5px; text-decoration:none;background:url(../images/bg_manager.png) no-repeat center -62px; float:right }
+.qdjlzlb{ background-color:#FFF; padding:0 18px 8px; font-size:16px; font-weight:bold}
+.jllb{ width:100%; float:left; border-top:1px solid #CCC;background:url(../images/bg_manager_1.png) 5px -125px no-repeat #fafafa; font-size:16px;line-height:40px;padding:0px}
+.spancss1{display:block; float:left; width:55px; padding-left:27px; height:41px; overflow:hidden; line-height:41px;  margin-right:3px}
+.spancss2{display:block; float:left; width:auto; height:41px; overflow:hidden;line-height:41px;  margin-right:3px}
+.spancss3{display:block; float:left; width:100px; height:41px; overflow:hidden; line-height:41px;  margin-right:3px}
+.qygslb{ border-top:1px solid #CCC;background:url(../images/bg_manager.png) 18px -233px no-repeat #FFF; font-size:16px;line-height:40px;padding-left:45px}
+ul.xm{ list-style:none}
+ul.xm li{border-bottom:1px solid #CCC; line-height:35px; padding-left:20px}
+.scjl{ background-color: #FFF; padding:15px 0 }
+.scjl a{ width:243px; line-height:28px; text-decoration:none;background:url(../images/bg_manager.png) no-repeat center -175px; display:block; text-align:center; margin:0 auto; font-weight:bold }
+
+.xx_lb{ line-height:40px; padding:0 20px;font-size:16px;}
+.xx_lb span{ color:#F90; margin:0 26px 0 6px}
+
+/*后面的为增加样式*/
+.srch{height:36px;background: url(../images/bg_manager.png) no-repeat center -544px #FFF; padding-top:20px; text-align:center;}
+.srch input{ width:170px; height:22px; line-height:22px; font-family:"微软雅黑", "新宋体"; font-size:14px; border:0; color:#999; background-color:transparent; margin-left:10px}
+.srch img{width:26px; height:24px;margin-left:10px}
+.icon1,.icon2,.icon3,.icon4,.icon5,.icon6,.icon7{ background-image:url(../images/bg_manager.png); background-repeat:no-repeat;padding:10px 0 0 20px; margin-left:20px;font-size:12px;}
+.icon1{background-position:1px -283px;float:left;;}
+.icon2{background-position:5px -315px;float:left;}
+.icon3{background-position:0px -345px;clear:left}
+.icon4{background-position:2px -375px;}
+.icon5{background-position:1px -405px;}
+.icon6{background-position:1px -437px;float:left;}
+.icon7{background-position:4px -467px;float:left;}
+
+.crl{ clear:left;background: url(../images/bg_manager.png) no-repeat right -495px; height:35px; text-align:right}
+.crl img{ width:40px; height:30px;}
+

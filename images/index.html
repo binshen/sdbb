@@ -1,0 +1,140 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta content='width=device-width, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0, user-scalable = no' name='viewport'/>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+<link href="css/nav_bottom.css" rel="stylesheet" type="text/css"/>
+<!--Required libraries-->
+<script src="js/jquery-v1.10.2.min.js" type="text/javascript"></script>
+<script src="js/modernizr-custom-v2.7.1.min.js" type="text/javascript"></script>
+<script src="js/jquery-finger-v0.1.0.min.js" type="text/javascript"></script>
+<!--Include flickerplate-->
+<link href="css/flickerplate.css" type="text/css" rel="stylesheet"/>
+<script src="js/flickerplate.min.js" type="text/javascript"></script>
+<!--Execute flickerplate-->
+<script>
+	$(document).ready(function(){
+		$('.flicker-example').flicker();
+	});
+	</script>
+<title>楼盘-房猫经纪人触屏版</title>
+</head>
+<body>
+<div id="page">
+	<div class="scroll">
+		<section id="J_Nav" class="header">
+		<!-- head -->
+		<div class="head">
+			<div class="head-in" id="J_headNav">
+				<div class="logo">
+					<a href="#">
+					<s></s>
+					</a>
+				</div>
+				<div class="naver1">
+                     {if $rel_name}
+					<span class="login01"><b>欢迎您：{$rel_name}</b></span> 
+                     {else}
+					<span class="login01"><a id="userLogin" href="{site_url url='login'}">登录</a></span>   
+                     {/if}
+				</div>
+				<div class="hd-menu">
+					<a class="btn-hd-menu"></a>
+				</div>
+			</div>
+		</div>
+		<div id="J_TodayTMS">
+			<!--  Banner -->
+			<section id="J_TodayBanner">
+			<div class="banner">
+				<div class="in-slider ishide">
+					<div class="in-slider-cont">
+						<div class="flicker-example" data-block-text="false">
+							<ul>
+								<li data-background="images/field.jpg">
+								<div class="flick-title">
+									5万享10万房猫优惠
+								</div>
+								<div class="flick-sub-text">
+									生态宜居，500亩玉湖环绕
+								</div>
+								</li>
+								<li data-background="images/forest.jpg">
+								<div class="flick-title">
+									都市繁华中绝版臻稀的核心区
+								</div>
+								<div class="flick-sub-text">
+									5A级写字楼财富由你掌控
+								</div>
+								</li>
+								<li data-background="images/frozen-water.jpg">
+								<div class="flick-title">
+									捕捉昆山最惠房源
+								</div>
+								<div class="flick-sub-text">
+									靠谱服务
+基于看房服务的评价体系，靠谱经纪人/
+								</div>
+								</li>
+							</ul>
+						</div>
+					</div>
+					<div class="in-slider-status" style="display: none;">
+					</div>
+				</div>
+			</div>
+			</section>
+		</div>
+	</div>
+	<!--  导航 -->
+	<div class="con notice">
+		<span class=""></span><a class="noticebar">
+                        {$index_info.message}                     
+		</a>
+	</div>
+	<h3 class="bg-heading2">精选楼盘</h3>
+	<div id="__idx_shaijia" class="pjt-list">
+	
+	
+{foreach from=$index_info.project item=row}
+		<div class="item flat-box">
+			<a href="#">
+			<div class="pics">
+				<img class="cover-l" src="{$base_url}uploadfiles/huxing/{$row.pic}"/>
+				<span class="price-tag"><b>{$row.project}</b></span>
+			</div>
+			</a>
+			<div class="cp-author">
+			</div>
+			<ul class="pjt-menu">
+				<li class="border "><a href="#">均价{$row.price}<span></span></a></li>
+				<li class="border active"><a href="{site_url url='user/wybb'}/{$row.id}">我要报备<span>+</span></a></li>
+				
+			</ul>
+		</div>
+{/foreach}	
+		
+		
+		
+		
+		<div id="closeFoot" class="myhodonw">
+			<div class="newmid">
+				<span><a href="javascript:scroll(0,0)" id="M_GoTop">top<b></b></a></span>
+				<p>
+					<span><a href="javascript:scroll(0,0)" id="M_GoTop">回到顶部</a></span>
+				</p>
+			</div>
+			<div class="mydown">
+				<ul>
+					<li>©2000-2014 ksls.com.cn 房猫经纪人</li>
+					<li><span class="lione"><a href="http://weibo.com/ksls"></a></span><span>|</span><span class="lione02"><a href="#"></a></span><span>微信公众账号:kunshanloushi</span></li>
+					<li>客服电话:400-626-9900</li>
+				</ul>
+			</div>
+			<div class="clear03">
+			</div>
+		</div>
+	</div>
+{include file="foot.html"}
+	</body>
+	</html>

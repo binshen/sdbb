@@ -1,0 +1,56 @@
+/* CSS Document */
+
+*{ margin:0; padding:0; border:0;}
+img{ border:0;}
+body{ width:1325px; height:auto;}
+
+.top-a{ width:1325px; height:24px; background:url(../news_images/altopbggg.png) no-repeat;font-family:"Î¢ÈíÑÅºÚ"; font-size:12px; font-weight:bold; }
+.ta-a{ width:1225px; height:24px; margin:0 auto;}
+.ta-a a{ text-decoration:none; color:#717171;}
+.a-a{ width:100px; height:24px; float:left; }
+.a-b{ width:25p7x; height:24px; float:right; text-align:right; line-height:23px;}
+.a-b ul{ list-style:none;}
+.a-b li{ float:left; display:inline;}
+.li-a{ margin-right:48px;}
+.li-b{ margin:auto 36px;}
+
+.top-b{ background:url(../news_images/altopbbbb.jpg) no-repeat; width:1325px; height:76px;}
+.top-b-a{width:290px; height:36px; border:solid 1px #cacaca; border-right:none; line-height:36px;font-family:"Î¢ÈíÑÅºÚ"; font-size:13px; color:#cacaca;vertical-align:middle;}
+.top-b-b{ width:338px;margin:0 auto; position:relative; top:20px; }
+
+.top-c{ width:1325px; height:35px; border-bottom:solid 3px #b81b2c;}
+.c-a{ width:1225px; height:35px; margin:0 auto; background:#000;}
+.c-b{ width:210px; height:35px; float:left; background:#b81b2c;}
+.c-b span{font-family:"ËÎÌå"; font-size:16px; font-weight:bold; color:#000; display:inline-block; height:20px; vertical-align:top; padding-top:12px;}
+.c-c{ width:855px; height:35px;float:left; list-style:none;}
+.c-c li{ display: inline-block;line-height: 30px; margin-left:20px;}
+.c-c li a{ font-family:"ËÎÌå"; font-size:14px; font-weight:bold; color:#fff; text-decoration:none;float:left;}
+.content{ width:1225px; height:auto; overflow:hidden; margin:50px auto;}
+.left{ width:260px; float:left;}
+.left-a{ width:260px; height:28px; border:solid 2px #cacaca;}
+.left-b{ width:260px; height:auto; overflow:hidden; border:solid 1px #e4e4e4;}
+.lba{ display:block; width:240px; height:38px; font-family:"Î¢ÈíÑÅºÚ"; font-size:12px; color:#b8192b; text-align: left; background:url(../news_images/allitoppppp.png) no-repeat bottom; line-height:38px; margin:0 auto;}
+.left-b ul{ width:240px; margin:14px auto; line-height:30px;text-align: left; list-style:none;}
+.left-b li{ width:220px; margin:0 auto;}
+.left-b li img{ margin: auto 6px auto 4px;}
+.left-b li a{ text-decoration:none;font-family:"Î¢ÈíÑÅºÚ"; font-size:12px; color:#9f9f9f; }
+.left-b li a:hover{ color:#b8192b}
+
+.left-c{ width:260px; height:250px; list-style:none;font-family:"Î¢ÈíÑÅºÚ"; font-size:12px; color:#b8192b; text-align: left; line-height:34px;}
+.left-c li{ width:240px; height:38px;float:left; line-height:40px;}
+.lca{ background:url(../news_images/allitoppppp.png) no-repeat top;}
+.lcc{  border-top: groove 1px #e4e4e4;}
+.left-c a{ text-decoration:none;font-family:"Î¢ÈíÑÅºÚ"; font-size:12px; color:#9f9f9f;}
+.left-c a:hover{color:#b8192b}
+
+.right{ width:935px; height: auto; overflow:hidden; float:right;}
+.rtop{ width:935px; height:20px; border-bottom:solid 3px #cacaca; padding-top:4px; padding-bottom:4px;}
+.rmiddle{ width:935px; height:auto; overflow:hidde;}
+.rmiddle div{ width:295px; height:230px; float:left; margin-top:28px; margin-left:25px;}
+.rmiddle div img{ width:278px; height:185px; display:block; padding:6px; border:solid 2px #cfcfcf;}
+.rmiddle div span{ width:294px; height:28px; display:inline-block; text-align:center;font-family:"Î¢ÈíÑÅºÚ"; font-size:12px; color:#b7b7b7; line-height:28px; font-weight:bold; border-bottom: dotted 2px #cfcfcf; }
+#a{ margin-left:0px;}
+
+
+
+

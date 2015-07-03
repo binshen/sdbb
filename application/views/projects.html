@@ -1,0 +1,44 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+<meta name="viewport" content="width=device-width,initial-scale=1.0,maximum-scale=1.0,user-scalable=no" />
+<link href="{$base_url}css/hh_style.css" rel="stylesheet" type="text/css"/>
+<link href="{$base_url}css/hh_common.css" rel="stylesheet" type="text/css"/>
+<script src="{$base_url}js/jquery-v1.10.2.min.js" type="text/javascript"></script>
+<title>项目管理</title>
+</head>
+<body>
+<div class="rtn"><a href="{site_url url='admin'}"><img src="{$base_url}images/back.png" /></a></div>
+<div class="top">项目管理</div>
+<div class="bblb">
+  <h1>项目信息总列表</h1>
+</div>
+{foreach from=$projects item=row key=k}
+<div class="box_list {if $k eq 0}mgn_t_10{/if}" onclick="s_h_menu(this)">
+  <div class="arr_b3"><img src="{$base_url}images/arr_b3.png"/></div>
+  <div class="xm2">{$row.project}</div>
+</div>
+<div class="xx hd">
+  <ul>
+    <li>报备有效期  {$row.bb_valid} 天</li>
+	<li>带看效期  {$row.qy_valid} 天</li>
+	<li style="border:0">佣金:  {$row.remark}</li>
+  </ul>
+  <div class="clr"></div>
+</div>
+{/foreach}
+<script>
+function s_h_menu(obj){
+	if(!$(obj).next().is(":hidden")){
+		$(obj).next().slideUp(300);
+	}else{
+		$(".xx").hide();
+		$(obj).next().slideDown(300);
+	}
+}
+
+
+</script>
+</body>
+</html>

@@ -1,0 +1,42 @@
+@charset "utf-8";
+/* CSS Document */
+
+body{background-color:#fff;}
+.top{font-size:18px; font-weight:bold;line-height:48px;text-align:center; color:#FFF; padding:0 35px 14px 0;background: url(../images/bar_1.jpg) repeat-x #FFF }
+.rtn{float:left; margin:17px 12px}
+
+.fmxb{ margin:0 20px; padding:10px 0 10px 55px; position:relative; height:auto; overflow:hidden }
+.brdr_b{border-bottom:1px solid #c4c4c7}
+.fmxb h2{ font-size:16px; font-weight:normal; color:#ff6e02;float:left}
+.fmxb span{ font-size:12px; padding:2px 3px; margin-left:10px; color:#FFF; background:url(../images/bg_lpxq.png) no-repeat 0 -61px; display:block; float:left}
+.fmxb p{font-size:12px; clear:both; line-height:20px; color:#999}
+.fmxb p span{ color:#333; float:none;     background-image:none; display:inline; margin:0;}
+.fmxb_img{ width:44px; height:44px; background:url(../images/bg_lpxq.png) no-repeat 0 0; position:absolute; top:10px; left:0px}
+.mz{ line-height:30px; background:url(../images/bg_lpxq_1.png) no-repeat 4px -101px; padding-left:26px; border-bottom:1px dashed #c4c4c7;margin:0 20px; font-size:12px }
+.mz span{ margin-right:5px}
+p.ly{margin:10px 25px; line-height:20px; font-size:12px; color:#999}
+p.ly span{color:#333;}
+.slj{ margin:0 20px;background:url(../images/bg_lpxq_2.png) no-repeat 0 -151px; height:28px;margin-bottom:30px}
+input{width:65%; height:24px;line-height:24px; border: 1px solid #aaaaaa; -webkit-border-radius:3px; border-radius:3px; font-size:12px;color: #999; font-family:"微软雅黑"; margin:2px 0 2px 34px}
+hr{ height:1px;border-top:1px solid #f0f1f5;margin:15px 0; clear:both}
+.hr2{ height:1px;border-top:1px solid #f0f1f5;margin:15px 0 3px; clear:both}
+.zzjz{ text-align:center; font-size:12px;background:url(../images/bg_lpxq.png) no-repeat center -484px; margin:20px auto 30px; width:250px  }
+
+
+.lp_l{ width:147px; float:left; margin:3px 0 20px 15px; position:relative}
+.lp_l img{ width:147px; height:83px}
+.xszk{ width:31px; height:18px; line-height:18px; color:#FFF;position:absolute; right:0; bottom:0; z-index:3; background-color:#999; text-align:center}
+.lp_m{width:25%;height:83px; border-right:1px solid #f0f1f5; float:left;margin:3px 0 0 10px }
+.lp_m h1{ font-size:16px; font-weight:normal;}
+.lp_m p{ font-size:12px; font-weight:normal; color:#ff6e02; line-height:26px; margin-top:3px}
+.lp_m span{ font-size:16px; font-weight:normal;color:#ff6e02;line-height:26px}
+.lp_m h2{font-size:12px; font-weight:normal;line-height:14px}
+.lp_r{width:25%; float:left; text-align:center; padding-top:46px;background:url(../images/bg_lpxq.png) no-repeat center -180px; }
+
+.icon1{ line-height:40px; margin:0px 15px;background:url(../images/bg_lpxq.png) no-repeat 0 -230px; padding-left:30px;border-bottom:1px solid #f0f1f5}
+.xq{ line-height:20px; color:#999; font-size:12px; margin:8px 25px}
+.icon2{ line-height:40px; margin:0px 15px;background:url(../images/bg_lpxq.png) no-repeat 4px -282px; padding-left:30px;border-bottom:1px solid #f0f1f5}
+.icon3{ line-height:33px; margin:0px 15px;background:url(../images/bg_lpxq.png) no-repeat 1px -330px; padding-left:30px; font-size:12px}
+.icon3 p{border-bottom:1px solid #f0f1f5}
+.icon2 img,.icon1 img{width:40px; height:40px; background:url(../images/bg_lpxq.png) no-repeat 15px -472px; float:right}
+.tel{background:url(../images/bg_lpxq.png) no-repeat center -533px #b7b7b7; line-height:40px; text-align:center; color:#FFF; font-weight:bold ; margin-top:40px}

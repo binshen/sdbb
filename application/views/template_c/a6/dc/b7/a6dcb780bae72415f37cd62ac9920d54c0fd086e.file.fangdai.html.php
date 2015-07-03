@@ -1,0 +1,343 @@
+<?php /* Smarty version Smarty-3.1.16, created on 2015-06-03 14:44:09
+         compiled from "application/views/fangdai.html" */ ?>
+<?php /*%%SmartyHeaderCode:39729102054a007498cf372-62324665%%*/if(!defined('SMARTY_DIR')) exit('no direct access allowed');
+$_valid = $_smarty_tpl->decodeProperties(array (
+  'file_dependency' => 
+  array (
+    'a6dcb780bae72415f37cd62ac9920d54c0fd086e' => 
+    array (
+      0 => 'application/views/fangdai.html',
+      1 => 1433310360,
+      2 => 'file',
+    ),
+  ),
+  'nocache_hash' => '39729102054a007498cf372-62324665',
+  'function' => 
+  array (
+  ),
+  'version' => 'Smarty-3.1.16',
+  'unifunc' => 'content_54a00749923189_00490096',
+  'variables' => 
+  array (
+    'base_url' => 0,
+    'rel_name' => 0,
+  ),
+  'has_nocache_code' => false,
+),false); /*/%%SmartyHeaderCode%%*/?>
+<?php if ($_valid && !is_callable('content_54a00749923189_00490096')) {function content_54a00749923189_00490096($_smarty_tpl) {?><?php if (!is_callable('smarty_function_site_url')) include '/var/www/html/sdbb/application/libraries/smarty/plugins/function.site_url.php';
+?><!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta content='width=device-width, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0, user-scalable = no' name='viewport'/>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+<link href="<?php echo $_smarty_tpl->tpl_vars['base_url']->value;?>
+css/Calculator.css" rel="stylesheet" type="text/css">
+<script type="text/javascript" language="javascript" src="<?php echo $_smarty_tpl->tpl_vars['base_url']->value;?>
+js/rate.js"></script>
+<title>房贷计算器_公积金贷款计算器-房猫经纪人触屏版</title>
+</head>
+<body>
+<div id="page">
+	<div class="scroll">
+		<section id="J_Nav" class="header">
+		<!-- head -->
+		<div class="head">
+			<div class="head-in" id="J_headNav">
+				<div class="c-nav-s">
+                <a class="c-btn c-btn-aw" href="index.html">返回</a>
+              </div>
+				<div class="naver1">
+                 <?php if ($_smarty_tpl->tpl_vars['rel_name']->value) {?>
+                 	<span class="login01"><b>欢迎您：<?php echo $_smarty_tpl->tpl_vars['rel_name']->value;?>
+</b></span> 
+                 <?php } else { ?>
+                   <span class="login01"><a id="userLogin" href="<?php echo smarty_function_site_url(array('url'=>'login'),$_smarty_tpl);?>
+">登录</a></span>   
+                 <?php }?>
+                    
+				<div class="hd-menu">
+					<a class="btn-hd-menu"></a>
+				</div>
+			</div>
+		</div>
+		<div style="padding:20px 0px 5px 0px;">
+			<table cellspacing="0" cellpadding="10" width="100%" border="0" class="tablebg">
+			<form id="calc11" name="calc11">
+				<tr>
+					<td width="55%" align="left">
+						<div class="mainl">
+							<div class="h1">
+                        请您填写：
+							</div>
+							<div class="mainltr01">
+								<div class="mainltr01tr">
+                            贷款类别：
+									<input name="loanradiotype" type="radio" class="noborder CHECKED" onclick="exc_zuhe(this.form, this.value);" value="1" checked>
+                            商业贷款
+									<input onclick="exc_zuhe(this.form, this.value);" class="noborder" style="MARGIN-LEFT: 10px" type="radio" value="2" name="loanradiotype">
+                            公积金贷款
+									<input onclick="exc_zuhe(this.form, this.value);" class="noborder" style="MARGIN-LEFT: 10px" type="radio" value="3" name="loanradiotype">
+                            组合型贷款
+									<input id="type" type="hidden" value="1" name="type">
+								</div>
+								<ul id="calc11_zuhe" class="calculator" style="DISPLAY: none">
+									<li>
+                                &nbsp;&nbsp;商业性：
+									<input id="zuhesy" class="guestbook01" maxlength="8" size="8" name="total_sy">
+                                元
+									<li>
+                                    &nbsp;&nbsp;公积金：
+									<input id="zuhegjj" class="guestbook01" maxlength="8" size="8" name="total_gjj">
+                                    元
+									</li>
+								</ul>
+							</div>
+							<div id="calc11_ctype" class="calculator">
+								<div class="h2">
+                            计算方式：
+								</div>
+								<ul>
+									<li style="PADDING-LEFT: 20px; liNE-HEIGHT: 30px">
+									<input onclick="exc_js(this.form, 1);" id="calc11_radio1" class="noborder" checked type="radio" value="1" name="jisuan_radio">
+                                根据面积、单价计算
+									<span id="calc1_js_div1" style="DISPLAY: block">
+									<li style="PADDING-LEFT: 20px; liNE-HEIGHT: 30px">
+                                        &nbsp;&nbsp;&nbsp;&nbsp;单价：
+									<input id="price" class="guestbook01" name="price">
+                                        元/平米
+									<li style="PADDING-LEFT: 20px; liNE-HEIGHT: 30px">
+                                            &nbsp;&nbsp;&nbsp;&nbsp;面积：
+									<input id="sqm" class="guestbook01" name="sqm">
+                                            平方米
+									<li style="PADDING-LEFT: 20px; liNE-HEIGHT: 30px">
+                                                &nbsp;&nbsp;&nbsp;&nbsp;按揭成数：
+									<select name="anjie" size="1" id="anjie" style="COLOR: #f00">
+										<option value="9">
+                                                        9成
+										</option>
+										<option value="8">
+                                                        8成
+										</option>
+										<option selected value="7">
+                                                        7成
+										</option>
+										<option value="6">
+                                                        6成
+										</option>
+										<option value="5">
+                                                        5成
+										</option>
+										<option value="4">
+                                                        4成
+										</option>
+										<option value="3">
+                                                        3成
+										</option>
+										<option value="2">
+                                                        2成
+										</option>
+									</select>
+									</span>
+									<li style="PADDING-LEFT: 20px; liNE-HEIGHT: 30px">
+									<input onclick="exc_js(this.form, 2);" id="calc11_radio2" class="noborder" type="radio" value="2" name="jisuan_radio">
+                                    根据贷款总额计算
+									<li id="calc1_js_div2" style="DISPLAY: none">
+                                        &nbsp;&nbsp;&nbsp;&nbsp;贷款总额：
+									<input id="daikuan" class="guestbook01" maxlength="8" size="10" name="daikuan_total000">
+                                        元
+									</li>
+								</ul>
+							</div>
+							<div class="mainltr01">
+                        按揭年数：
+								<select id="years" style="COLOR: #f00" size="1" name="years">
+									<option value="1">
+                                1年（12期）
+									</option>
+									<option value="2">
+                                2年（24期）
+									</option>
+									<option value="3">
+                                3年（36期）
+									</option>
+									<option value="4">
+                                4年（48期）
+									</option>
+									<option value="5">
+                                5年（60期）
+									</option>
+									<option value="6">
+                                6年（72期）
+									</option>
+									<option value="7">
+                                7年（84期）
+									</option>
+									<option value="8">
+                                8年（96期）
+									</option>
+									<option value="9">
+                                9年（108期）
+									</option>
+									<option value="10">
+                                10年（120期）
+									</option>
+									<option value="11">
+                                11年（132期）
+									</option>
+									<option value="12">
+                                12年（144期）
+									</option>
+									<option value="13">
+                                13年（156期）
+									</option>
+									<option value="14">
+                                14年（168期）
+									</option>
+									<option value="15">
+                                15年（180期）
+									</option>
+									<option value="16">
+                                16年（192期）
+									</option>
+									<option value="17">
+                                17年（204期）
+									</option>
+									<option value="18">
+                                18年（216期）
+									</option>
+									<option value="19">
+                                19年（228期）
+									</option>
+									<option selected value="20">
+                                20年（240期）
+									</option>
+									<option value="25">
+                                25年（300期）
+									</option>
+									<option value="30">
+                                30年（360期）
+									</option>
+								</select>
+							</div>
+							<div class="mainltr01">
+								<div class="mainltr01tr">
+                            贷款利率：
+									<select onchange="ShowlilvNew(this.form,document.calc11.years.value,this.value)" id="lilv" style="COLOR: #f00" name="lilv">
+										<option value="5">2014年1月1日利率上限（1.05倍）</option>
+										<option value="4">2014年1月1日利率上限（1.1倍）</option>
+										<option value="3">2014年1月1日利率下限（85折）</option>
+										<option value="2">2014年1月1日利率下限（7折）</option>
+										<option value="1" selected="true">2014年1月1日基准利率</option>
+									</select>
+								</div>
+								<ul>
+									<li id="singlelv_li" style="DISPLAY: block">
+									<input id="singlelv" class="red guestbook01" value="6.55">
+                              %
+									<li id="sdlv_li" style="DISPLAY: none">
+                                  &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;商&nbsp;&nbsp;&nbsp; 业：
+									<input id="sdlv" class="red guestbook01" value="6.55">
+                                  %
+									<li id="gjlv_li" style="DISPLAY: none">
+                                      &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;公 积 金：
+									<input id="gjlv" class="red guestbook01" value="4.5">
+                                      %
+									</li>
+								</ul>
+							</div>
+							<div class="mainltr01">
+                        还款方式：
+								<input onclick="ext_loanbenjin(this.form, this.value)" id="dengeben1" checked type="radio" value="1" name="radioben">
+                        等额本息
+								<input onclick="ext_loanbenjin(this.form, this.value)" id="dengeben2" type="radio" value="2" name="radioben">
+                        等额本金
+							</div>
+							<div class="mainltr02">
+								<a href="javascript:;" onclick="ext_loantotal(document.calc11)" class="subok">计算</a>
+                        &nbsp;&nbsp;&nbsp;&nbsp;
+								<a href="javascript:;" onclick="javascript:loanreset(document.calc11);" class="subclose">重置</a>
+							</div>
+						</div>
+					</td>
+				</tr>
+				<tr>
+					<td align="left">
+						<div class="mainr">
+							<div class="h1">
+                        查看结果：
+							</div>
+							<div class="mainrtr01">
+								<ul>
+									<li>
+                                &nbsp;&nbsp;房款总额：
+									<input id="fangkuan_total1" class="guestbook02" readonly name="fangkuan_total1">
+                                元
+									<li>
+                                    &nbsp;&nbsp;贷款总额：
+									<input class="guestbook02" readonly name="daikuan_total1">
+                                    元
+									<li>
+                                        &nbsp;&nbsp;还款总额：
+									<input class="guestbook02" readonly name="all_total1">
+                                        元
+									<li style="PADDING-LEFT: 0px">
+                                            &nbsp;&nbsp;付利息款：
+									<input class="guestbook02" readonly name="accrual1">
+                                            元
+									<li>
+                                                &nbsp;&nbsp;首期付款：
+									<input class="guestbook02" readonly name="money_first1">
+                                                元
+									<li>
+                                                    &nbsp;&nbsp;贷款月数：
+									<input class="guestbook02" readonly name="month1">
+									<li id="benxi">
+                                                        &nbsp;&nbsp;月均还款：
+									<input class="guestbook02" readonly name="month_money1">
+                                                        元
+									<li id="benjin" style="DISPLAY: none">
+                                                            &nbsp;&nbsp;月均金额：
+									<textarea class="inputwidthnew" rows="3" cols="16" name="month_money3">
+									</textarea>
+                                                            元
+									</li>
+								</ul>
+								<div id="calc1_benjin" style="DISPLAY: none">
+									<input type="hidden" name="fangkuan_total2">
+									<input type="hidden" name="daikuan_total2">
+									<input type="hidden" name="all_total2">
+									<input type="hidden" name="accrual2">
+									<input type="hidden" name="money_first2">
+									<input type="hidden" name="month2">
+									<input type="hidden" name="month_money2">
+								</div>
+								<div class="mainrtr01tr">
+                            *以上结果仅供参考
+								</div>
+								<div style="MARGIN-TOP: 10px">
+								</div>
+							</div>
+						</div>
+					</td>
+				</tr>
+			</form>
+			</table>
+		</div>
+		<div id="J_TodayTMS">
+			<!--  Banner -->
+			<section id="J_TodayBanner">
+			<div class="banner">
+				<div class="in-slider ishide">
+					<div class="in-slider-cont">
+					</div>
+					<div class="in-slider-status" style="display: none;">
+					</div>
+				</div>
+			</div>
+			</section>
+		</div>
+	</div>
+	<?php echo $_smarty_tpl->getSubTemplate ("foot.html", $_smarty_tpl->cache_id, $_smarty_tpl->compile_id, 0, null, array(), 0);?>
+
+	</body>
+	</html><?php }} ?>

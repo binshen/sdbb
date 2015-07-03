@@ -1,0 +1,58 @@
+@charset "utf-8";
+body{
+	font-size=63%;
+	font-family: STHeiti,Arial !important;
+}
+label.error{
+	color:red;
+	font-size:0.9em;
+	margin-top:3px;
+}
+.div_input{
+	border:none !important; 
+}
+.div-signup{
+	padding-left:10px;
+	padding-right:10px;
+	border:1px solid #CCCCCC;
+	border-bottom-left-radius: 0.6em;
+    border-bottom-right-radius: 0.6em;
+	border-top-left-radius: 0.6em;
+    border-top-right-radius: 0.6em;
+}
+.div_atraffic div{
+	padding-left:10px;
+	padding-right:10px;
+}
+.ui-icon-tel{
+background: rgb(153, 12, 6) url(../images/phone.png) no-repeat;
+}
+
+/***********折叠样式  开始  *****************/
+.about_title{
+	text-align:left;
+}
+.about_title .ui-btn-up-a{
+	/*background:#3c3c3c;*/
+	background:#D4D4D4;
+	border:1px solid #969494;
+	color:#727171;
+	text-shadow: none!important;
+	background:linear-gradient( #D4D4D4,#b9b8b8 )!important;
+}
+
+.about_title .ui-btn-hover-a{
+	/*background:#3c3c3c;*/
+	background:#D4D4D4!important;
+}
+.about_title .ui-focus,.about_title .ui-btn-focus{
+	 box-shadow: 0 0 3px #D4D4D4 inset, 0 0 9px #D4D4D4!important;
+}
+
+.about_title .ui-collapsible-content{
+	/*font-size:1em;*/
+	/*font-family: STHeiti,Arial;*/
+	font-size:0.9em !important;
+}
+
+/***********折叠样式  结束  *****************/

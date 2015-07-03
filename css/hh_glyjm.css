@@ -1,0 +1,27 @@
+.header{ background:url(../images/bg_top2.jpg) repeat-x; height:135px; text-align:center}
+.header3{ background:url(../images/bg_top3.jpg) repeat-x; height:135px; text-align:center}
+.header4{ background:url(../images/bg_top4.jpg) repeat-x; height:135px; text-align:center}
+.tx_adm{ background:url(../images/bg_tx_adm.png) no-repeat center 8px; padding:58px 20px 19px; color:#FFF; font-size:11px}
+.tx_kfjljm{background:url(../images/bg_tx_cs-manager.png) no-repeat center 8px; padding:58px 20px 19px; color:#FFF; font-size:11px}
+.tx_mdjl{ background: url(../images/bg_tx_mdjl.png) no-repeat center 8px; padding:58px 20px 19px; color:#FFF; font-size:11px}
+.tx_wljl{ background: url(../images/bg_tx_wljl.png) no-repeat center 8px; padding:58px 20px 19px; color:#FFF; font-size:11px}
+.header ul,.header3 ul,.header4 ul{ list-style:none;}
+.header ul li,.header3 ul li,.header4 ul li{display:inline;color:#FFF;line-height:36px;margin:0 3px}
+.header ul li a,.header3 ul li a,.header4 a{color:#FFF;text-decoration:none;font-weight:bold}
+/*.header ul li.MunuLine{ width:2px;background:url(../images/bg_adm.png) 0 -765px no-repeat}*/
+.box{ background-color:#FFF}
+.box_xmgl,.box_kfjlgl,.box_qdjlgl,.box_bbxxlb,.box_dthtgl,.box_sspt,.box_aqzx,.box_shgl,.box_zhkt,.box_hydcx,.box_qygslb{width:94px; border:1px solid #CCC; text-align:center; margin:10px 5px 0;float:left;}
+.box_xmgl{background:url(../images/bg_adm.png) center -88px no-repeat #f4f4f8}
+.box_kfjlgl{background:url(../images/bg_adm.png) center -180px no-repeat #f4f4f8}
+.box_qdjlgl{background:url(../images/bg_adm.png) center -272px no-repeat #f4f4f8}
+.box_bbxxlb{background:url(../images/bg_adm.png) center -365px no-repeat #f4f4f8}
+.box_dthtgl{background:url(../images/bg_adm.png) center -456px no-repeat #f4f4f8}
+.box_sspt{background:url(../images/bg_adm.png) center -546px no-repeat #f4f4f8}
+.box_aqzx{background:url(../images/bg_adm.png) center -636px no-repeat #f4f4f8}
+.box_shgl{background:url(../images/bg_adm.png) center -723px no-repeat #f4f4f8}
+.box_zhkt{background:url(../images/bg_adm.png) center -947px no-repeat #f4f4f8}
+.box_hydcx{background:url(../images/bg_adm.png) center -1042px no-repeat #f4f4f8}
+.box_qygslb{background:url(../images/bg_adm.png) center -1140px no-repeat #f4f4f8}
+.box h1{font-size:14px; margin:62px 0 0}
+.box p{font-size:11px; margin:5px 0 15px; color: #999}
+.mgn_b_10{ margin-bottom:40px}

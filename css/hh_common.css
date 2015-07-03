@@ -1,0 +1,113 @@
+*{margin:0px;padding:0px}
+html{height:100%;}
+body{font-family:"微软雅黑";font-size:14px;line-height:1em; color: #333}
+a{ color: #333; text-decoration:none}
+a img{border:0}
+.clr{ clear:both}
+.hd{display:none}
+
+.mgn_t_10{ margin-top:10px}
+.mgn_b_10{ margin-bottom:10px}
+.pddg_t_40{ padding-top:40px}
+.brdr_b_1{ border-bottom:1px solid #CCC}
+
+.page{ text-align:center; width:100px; margin:15px auto 10px; padding:11px 0; position:relative;margin-bottom:30px;}/*姚滨修改*/
+.arr_l{float:left; margin:25px 0 0 15px}/*修改margin*/
+.arr_r{float:right; margin:25px 10px 0 0}/*修改margin*/
+
+.arr_b3,.arr_t3{ float:right; padding:16px 10px 14px}
+.arr_b4,.arr_t4{ float:right; padding:16px 16px 14px}
+.dlt{float:right; padding:6px 10px 0}
+
+.bttm{ background-color:#FFF; height:42px; border-top:1px solid #CCC}
+a.lp,a.dt,a.gj,a.wdfm{ padding:25px 0 0;font-size:11px; text-decoration:none; color: #333;float:left; width:24%; text-align:center}
+a.lp{background:url(../images/bg.png)  center -627px no-repeat ;}
+a.dt{background:url(../images/bg.png)  center -675px no-repeat ;}
+a.gj{background:url(../images/bg.png)  center -725px no-repeat ;}
+a.wdfm{background:url(../images/bg.png)  center -770px no-repeat #ff6600 ;color:#FFF;padding:25px 0 2px; float:right}
+
+
+/* 姚斌添加底部样式 */
+#bottom-nav {
+position: fixed;
+bottom: 0;
+left: 0;
+height: 49px;
+z-index: 99999;
+width: 100%;
+background-color: #fff;
+overflow: hidden;
+}
+#bottom-nav a {
+float: left;
+width: 25%;
+margin: 0;
+height: 47px;
+border-top: 2px solid #BDC3C7;
+background-color: #fff;
+padding: 0;
+text-align: center;
+}
+#bottom-nav i {
+margin: 5px 0 0 0;
+width: 24px;
+height: 24px;
+display: inline-block;
+background-size: 24px 24px;
+}
+
+i.ch-index {
+background-image: url(../images/lou-index.png);
+}
+
+#bottom-nav a.active i.ch-index{
+background-image: url(../images/lou-index-w.png); ;	
+	}
+#bottom-nav a.active {
+border-top: 2px solid #e66c00;
+background-color: #e67e22;
+}
+#bottom-nav span {
+display: block;
+height: 14px;
+line-height: 15px;
+font-size: 11px;
+color: #42acb4;
+}
+
+#bottom-nav i {
+margin: 5px 0 0 0;
+width: 24px;
+height: 24px;
+display: inline-block;
+background-size: 24px 24px;
+}
+
+#bottom-nav a.active span {
+color: #fff;
+}
+i.ch-pros {
+background-image: url(../images/i-index.PNG);
+}
+#bottom-nav a.active i.ch-pros{
+background-image: url(../images/i-index-w.PNG);	
+	}
+
+i.ch-showhome {
+background-image: url(../images/news-index.png);
+}
+#bottom-nav a.active i.ch-showhome{
+background-image: url(../images/news-index-w.png) ;	
+	}
+i.ch-people {
+background-image: url(../images/tools-index.png);
+}
+#bottom-nav a.active i.ch-people{
+background-image:url(../images/tools-index-w.png);	
+	}
+	
+/*************************end*********************/
+
+/*add--*/
+.select3{font-family:'微软雅黑', '新宋体';width:40px;background:url(../images/bg_hydcx.png) 10px -277px no-repeat;overflow:hidden;border:0px;background-color:transparent;}
+/*--+*/

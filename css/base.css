@@ -1,0 +1,92 @@
+@charset "utf-8";
+/* CSS Document */
+
+@charset "utf-8";
+/* 
+	@名称: reset
+	@功能: 重设浏览器默认样式
+*/
+html{color:#000;background:#fff; -webkit-text-size-adjust:none;}
+body,div,dl,dt,dd,ul,ol,li,h1,h2,h3,h4,h5,h6,pre,code,form,fieldset,legend,input,textarea,p,blockquote,th,td,hr,button,article,aside,details,figcaption,figure,footer,header,hgroup,menu,nav,section 
+{margin:0;padding:0;}
+article,aside,details,figcaption,figure,footer,header,hgroup,menu,nav,section { display:block;}
+body,button,input,select,textarea{font:12px/1.5 tahoma,arial,\5b8b\4f53;}
+input,select,textarea{font-size:100%;}
+table{border-collapse:collapse;border-spacing:0;}
+/* IE bug fixed: th 不继承 text-align*/
+th{text-align:inherit;font-weight:400;}
+fieldset,img{border:0;}
+/* ie6 7 8(q) bug 显示为行内表现 */
+iframe{display:block;}
+ol,ul {list-style:none;}
+i,em{font-style:normal;}
+h1,h2,h3,h4,h5,h6 {font-size:100%;font-weight:400;}
+a{color:#333333;text-decoration:none;}
+a:hover {color:#FF4A00;text-decoration:underline;}
+
+/*base*/
+.dn {display:none;}
+.clearfix:after {visibility:hidden;display:block;font-size:0;content:" ";clear:both;height:0;}
+.clearfix {zoom:1; /* for IE6 IE7 */}
+.l{float:left;}
+.r{float:right;}
+.tc{text-align:center;}
+.tl{text-align:left;}
+.tr{text-align:right;}
+.org,a.org{color:#FF4C00;}
+.red,a.red{color:red;}
+.gray,a.gray{color:gray;}
+.sky,a.sky{color:#2876B9;}
+.bb{border-bottom:1px solid #E9E9E9;}
+.in-cr{display:inline-block;width:14px;height:14px;margin-right:3px;vertical-align:middle;}/*radio checkbox style*/
+.in-t{height:16px;width:132px;line-height:16px;padding:3px;border:1px solid #B0B0B0;vertical-align:middle;}/*默认长度140px*/
+.select{height:24px;padding:3px 3px 3px 0;vertical-align:middle;}
+.placeholder{color: #aaa;}/*文本输入插件*/
+.i-lsj,.i-rsj{display:inline-block;width:3px;overflow:hidden;}/*左右小三角样式*/
+.i-lsj{margin-right:3px;text-indent:0;}
+.i-rsj{margin-left:3px;text-indent:-8px;}
+
+/*alert全局弹层样式*/
+html,body{_height:100%;}
+#simplemodal-overlay {background-color:#000;}
+#simplemodal-container{background-image:url(about:blank);background-attachment:fixed;}
+#basic-modal-content {display:none;}
+.dialog{width:560px;padding:2px;background:#EBEBEB;display:none;}
+.dialog .hd{height:30px;color:#3C3C3C;background:#EBEBEB;position:relative;overflow:hidden;}
+.dialog .hd .title{padding-left:12px;font:700 14px/30px microsoft yahei,simhei;}
+.dialog .hd .add{position:absolute;right:10px;top:0;width:20px;text-align:center;font:14px/30px tahoma;cursor:pointer;}
+.dialog .hd .add:hover{text-decoration:none;color:#DC3C00;}
+.dialog .bd,.dialog .ft{padding:8px 12px;background:#fff;position:relative;zoom:1;}
+.dialog .ft .in{padding-top:8px;border-top:1px dotted #A2A2A2;}
+.dialog .add-info{position:absolute;right:20px;top:30px;}
+.dialog .add-info .title{margin-bottom:8px;border-bottom:1px solid #DDE3E8;font:700 14px/30px tahoma,simsun;color:#DC3C00;}
+
+/*form 全局表单样式可应用于注册、登录、修改密码等表单操作*/
+.form{padding-top:20px;}
+.f-info{margin-bottom:10px;padding-left:88px;position:relative;zoom:1;}
+.f-info dt{position:absolute;width:88px;left:0;top:0;line-height:24px;text-align:right;}
+.f-info .txt{line-height:24px;}
+.f-info .in-t{margin-right:5px;}
+.f-btn .blue-btn{margin-right:10px;}
+.blue-btn{display:inline-block;height:22px;padding:0 12px;border:1px solid #5294CE;background:#71AFE2;color:#FFF;font-weight:700;cursor:pointer;}
+.blue-btn:hover{border:1px solid #5694C9;color:#fff;background:#4586D1;text-decoration:none;}
+
+/*page全局分页样式*/
+.page{padding-bottom:1px;color:#818080;font-size:0;*word-spacing:-1px;text-align:center;}
+.page *{display:inline-block;font-size:12px;letter-spacing: normal;word-spacing: normal;vertical-align:top;*vertical-align:middle;}
+.page a{height:20px;line-height:20px;margin:0 2px;padding:0 6px;border:1px solid #E2E2E2;color:#2763BC;}
+.page a:hover{border:1px solid #FF6204;color:#FF6204;text-decoration:none;}
+.page .cur,.page .cur:hover{border:1px solid #FF6204;color:#fff;text-decoration:none;background:#FF6204;}
+.page .i-lsj,.page .i-rsj{color:#FF6204;}
+.page .tj{margin-left:6px;font-size:14px;}
+.page .tj i{font-size:14px;}
+.page .no,.page .no .i-lsj,.page .no .i-rsj,.page .no:hover{border-color:#E2E2E2;color:#BCBCBC;}
+
+/*回到顶部*/
+#goTop{width:40px;height:auto;border:1px solid #D5D5D5;padding:1px;}
+#goTop a{display:block;width:100%;height:25px;padding-top:25px;color:#737272;text-align:center;background:#EEEEEE url(images/goTop.png) no-repeat 50% 10px;}
+
+/*ft*/
+#ft{padding:15px 0;line-height:20px;border-top:1px solid #464646;text-align:center;}
+#ft a{color:#333;}
+#ft a:hover{color:#F45E0B;}

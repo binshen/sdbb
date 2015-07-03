@@ -1,0 +1,45 @@
+
+<!DOCTYPE>
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+<meta name="viewport" content="width=device-width,initial-scale=1.0,maximum-scale=1.0,user-scalable=no" />
+<link href="{$base_url}css/hh_common.css" rel="stylesheet" type="text/css"/>
+<link href="{$base_url}css/hh_glyjm.css" rel="stylesheet" type="text/css"/>
+<script src="{$base_url}js/jquery-v1.10.2.min.js" type="text/javascript"></script>
+<title>业务员</title>
+</head>
+<body>
+<div class="header">
+  <div class="tx_kfjljm">{$rel_name}</div>
+  <form method="post" action="{site_url url='user/wdbb'}">
+  <ul>
+    <li><a href="javascript:get_search('1');"><span class="kj">{$count.bb}</span><strong>已报备</strong></a></li>
+    <li>|</li>
+    <li><a href="javascript:get_search('3');"><span class="dt">{$count.dk}</span><strong>已带看</strong></a></li>
+    <li>|</li>
+    <li><a href="javascript:get_search('5');"><span class="hm">{$count.qy}</span><strong>已签约</strong></li>
+    <li>|</li>
+    <li><a href="javascript:get_search('2');"><span class="zx">{$count.jjdq}</span><strong>报备将到期</strong></a></li>
+    <li>|</li>
+	<li><a href="javascript:get_search('-2');"><span class="zx">{$count.dq}</span><strong>已过期</strong></a></li>
+  </ul>
+  <input type="hidden" name="status" />
+  </form>
+</div>
+<div class="box">
+  <a href="{site_url url='user/wdbb'}"><div class="box_shgl"><h1>我的报备</h1><P>我的报备</P></div></a>
+  <a href="{site_url url='user/wybb'}"><div class="box_dthtgl"><h1>我要报备</h1><P>我要报备</P></div></a>
+  <a><div class="box_sspt"><h1>申诉平台</h1><P>申诉情况处理</P></div></a>
+  <a href="{site_url url='login/aqzx'}"><div class="box_aqzx mgn_b_10"><h1>安全中心</h1><P>密码修改、退出</P></div></a>
+  <div class="clr"></div>
+</div>
+{include file="foot.html"}
+<script>
+function get_search(status){
+	$("[name='status']").val(status);
+	$("form").submit();
+}
+</script>
+</body>
+</html>
