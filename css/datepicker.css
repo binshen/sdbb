@@ -1,0 +1,17 @@
+@CHARSET "UTF-8";
+.datepicker {
+   	padding-top:5px;
+}
+
+.datepicker input {
+    border: 1px solid #aaaaaa;
+    border-radius: 3px;
+    color: #999;
+    font-family: "微软雅黑";
+    font-size: 14px;
+    height: 26px;
+    line-height: 24px;
+    margin: 2px 0 2px 2px;
+    padding:0 0 0 5px;
+    width: 23%;
+}

@@ -3,12 +3,16 @@
 <head>
 <meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
 <meta name="viewport" content="width=device-width,initial-scale=1.0,maximum-scale=1.0,user-scalable=no" />
+<link href="{$base_url}css/hh_khjlgljm.css" rel="stylesheet" type="text/css"/>
 <link href="{$base_url}css/hh_style.css" rel="stylesheet" type="text/css"/>
 <link href="{$base_url}css/hh_xzqdjl.css" rel="stylesheet" type="text/css">
 <link href="{$base_url}css/hh_common.css" rel="stylesheet" type="text/css">
 <script src="{$base_url}js/jquery-v1.10.2.min.js" type="text/javascript"></script>
 <link rel="stylesheet" href="{$base_url}css/easydialog.css"/>
 <script src="{$base_url}js/easydialog.min.js"></script>
+<link rel="stylesheet" href="{$base_url}css/datepicker.css"/>
+<link rel="stylesheet" href="{$base_url}js/laydate/need/laydate.css"/>
+<script src="{$base_url}js/laydate/laydate.js"></script>
 <title>报备管理</title>
 </head>
 <body>
@@ -31,6 +35,17 @@
 		        <option value="4" {if $data.status eq '4'}selected='selected'{/if}>带看即将到期</option>
 		        <option value="5" {if $data.status eq '5'}selected='selected'{/if}>已签约</option>
 	    	</select>
+	    	
+		    <div class="datepicker">
+		   		<input name="start_date" id="start_date" type="text" style="background:#fff" value="{$data.start_date}" readonly placeholder="开始日期" />
+		   		~
+		    	<input name="end_date" id="end_date" type="text" style="background:#fff" value="{$data.end_date}" readonly placeholder="结束日期" />
+		    </div>
+		    
+	    	<div class="srch">
+		   		<input name="main_search" type="text" class="inp_key" value="{$data.main_search}" placeholder="客户(姓名、电话)模糊搜索"/>
+		    	<a href="javascript:get_search('1');"><img src="{$base_url}images/blank.png" /></a>
+		    </div>
 	</form>
 </div>
 <div class="bblb">
@@ -153,6 +168,20 @@ function confirm_qy(id){
 	}
 }
 
+laydate({
+	elem: '#start_date',
+    max: laydate.now(),
+    choose: function(datas){
+        get_search('1');
+    }
+});
+laydate({
+	elem: '#end_date',
+    max: laydate.now(),
+    choose: function(datas){
+        get_search('1');
+    }
+});
 </script>
 </body>
 
