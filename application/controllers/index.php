@@ -95,7 +95,7 @@ class Index extends MY_Controller {
 		$mobile_token_list=array('Profile/MIDP','Configuration/CLDC-','160×160','176×220','240×240','240×320','320×240','UP.Browser','UP.Link','SymbianOS','PalmOS','PocketPC','SonyEricsson','Nokia','BlackBerry','Vodafone','BenQ','Novarra-Vision','Iris','NetFront','HTC_','Xda_','SAMSUNG-SGH','Wapaka','DoCoMo','iPhone','iPod');
 		$mobile_list = array_merge($mobile_token_list, $mobile_os_list);
 		//排除Windows
-		if (!$this->contains($agent, "Windows NT") || ($this->contains($agent, "Windows NT") && contains($agent, "compatible; MSIE"))) {
+		if (!$this->contains($agent, "Windows NT") || ($this->contains($agent, "Windows NT") && $this->contains($agent, "compatible; MSIE"))) {
 			//排除Mac
 			if (!$this->contains($agent, "Windows NT") && !$this->contains($agent, "Macintosh")) {
 				foreach ($mobile_list as $k => $item) {
