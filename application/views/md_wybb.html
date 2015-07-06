@@ -1,47 +1,13 @@
-<?php /* Smarty version Smarty-3.1.16, created on 2015-07-06 11:42:00
-         compiled from "application/views/wybb.html" */ ?>
-<?php /*%%SmartyHeaderCode:76300625554a016113831b0-15558965%%*/if(!defined('SMARTY_DIR')) exit('no direct access allowed');
-$_valid = $_smarty_tpl->decodeProperties(array (
-  'file_dependency' => 
-  array (
-    '86bcb2fc8ed6068cc5dd4c7d26123a0c87c66998' => 
-    array (
-      0 => 'application/views/wybb.html',
-      1 => 1435891722,
-      2 => 'file',
-    ),
-  ),
-  'nocache_hash' => '76300625554a016113831b0-15558965',
-  'function' => 
-  array (
-  ),
-  'version' => 'Smarty-3.1.16',
-  'unifunc' => 'content_54a016113f6103_28681939',
-  'variables' => 
-  array (
-    'base_url' => 0,
-    'projects' => 0,
-    'row' => 0,
-    'project_id' => 0,
-  ),
-  'has_nocache_code' => false,
-),false); /*/%%SmartyHeaderCode%%*/?>
-<?php if ($_valid && !is_callable('content_54a016113f6103_28681939')) {function content_54a016113f6103_28681939($_smarty_tpl) {?><?php if (!is_callable('smarty_function_site_url')) include '/www/sdbb/application/libraries/smarty/plugins/function.site_url.php';
-?><!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
 <html xmlns="http://www.w3.org/1999/xhtml">
 <head>
 <meta content='width=device-width, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0, user-scalable = no' name='viewport'/>
 <meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
-<link href="<?php echo $_smarty_tpl->tpl_vars['base_url']->value;?>
-css/reg.css" rel="stylesheet" type="text/css"/>
-<link href="<?php echo $_smarty_tpl->tpl_vars['base_url']->value;?>
-css/report.css" rel="stylesheet" type="text/css"/>
-<script src="<?php echo $_smarty_tpl->tpl_vars['base_url']->value;?>
-js/jquery-v1.10.2.min.js" type="text/javascript"></script>
-<link rel="stylesheet" href="<?php echo $_smarty_tpl->tpl_vars['base_url']->value;?>
-css/easydialog.css"/>
-<script src="<?php echo $_smarty_tpl->tpl_vars['base_url']->value;?>
-js/easydialog.min.js"></script>
+<link href="{$base_url}css/reg.css" rel="stylesheet" type="text/css"/>
+<link href="{$base_url}css/report.css" rel="stylesheet" type="text/css"/>
+<script src="{$base_url}js/jquery-v1.10.2.min.js" type="text/javascript"></script>
+<link rel="stylesheet" href="{$base_url}css/easydialog.css"/>
+<script src="{$base_url}js/easydialog.min.js"></script>
 <title>报备 -房猫经纪人触屏版</title>
 </head>
 
@@ -50,8 +16,7 @@ js/easydialog.min.js"></script>
 	<header class="c-nav">
 	<div class="c-nav-w">
 		<div class="c-nav-s">
-			<a class="c-btn c-btn-aw" href="<?php echo smarty_function_site_url(array('url'=>'user'),$_smarty_tpl);?>
-">返回</a>
+			<a class="c-btn c-btn-aw" href="{site_url url='md_manager'}">返回</a>
 		</div>
 		<div class="c-nav-c">
 			<span class="omit">我要报备</span>
@@ -60,8 +25,7 @@ js/easydialog.min.js"></script>
 	</header>
 	<div data-role="content" class="ui-content">
 		<div class="container width90 pt20">
-		<form method="post" action="<?php echo smarty_function_site_url(array('url'=>'user/save_bb'),$_smarty_tpl);?>
-">
+		<form method="post" action="{site_url url='md_manager/save_bb'}">
 				<ul class="search-group unstyled">
 		
 					<li>
@@ -70,15 +34,9 @@ js/easydialog.min.js"></script>
 						<span class="coupon-label">选择项目：</span>
 						<div class="select1">
 							<select style="border:0px;background-color:transparent;width: 310px; padding-left: 60px;" name="k_project" id="k_project">
-							    <?php  $_smarty_tpl->tpl_vars['row'] = new Smarty_Variable; $_smarty_tpl->tpl_vars['row']->_loop = false;
- $_from = $_smarty_tpl->tpl_vars['projects']->value; if (!is_array($_from) && !is_object($_from)) { settype($_from, 'array');}
-foreach ($_from as $_smarty_tpl->tpl_vars['row']->key => $_smarty_tpl->tpl_vars['row']->value) {
-$_smarty_tpl->tpl_vars['row']->_loop = true;
-?>
-									<option value="<?php echo $_smarty_tpl->tpl_vars['row']->value['id'];?>
-" <?php if ($_smarty_tpl->tpl_vars['project_id']->value==$_smarty_tpl->tpl_vars['row']->value['id']) {?>selected='selected'<?php }?>><?php echo $_smarty_tpl->tpl_vars['row']->value['project'];?>
-</option>
-								<?php } ?>
+							    {foreach from=$projects item=row}
+									<option value="{$row.id}" {if $project_id == $row.id}selected='selected'{/if}>{$row.project}</option>
+								{/foreach}
 							</select>
 						</div>
 					</div>
@@ -161,7 +119,7 @@ function check_input(){
 		});
 		return false;
 	}else{
-		var re = /^1\d{10}$/;
+		{literal}var re = /^1\d{10}$/;{/literal}
 		if (!re.test($("#k_phone").val())) {
 			easyDialog.open({
 				container : {
@@ -179,4 +137,4 @@ function check_input(){
 </script>
 
 </body>
-</html><?php }} ?>
+</html>

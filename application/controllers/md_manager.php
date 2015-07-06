@@ -80,6 +80,55 @@ class Md_manager extends MY_Controller {
     	$this->cismarty->display('main_list.html');
     }
     
+    public function wybb($project_id=''){
+    	$projects = $this->sysconfig_model->get_projects();
+    	$this->cismarty->assign('projects',$projects);
+    	$this->cismarty->assign('project_id',$project_id);
+    	$this->cismarty->display('md_wybb.html');
+    }
+    
+    public function save_bb(){
+    	$rs = $this->user_model->save_bb();
+    	if($rs == '1'){
+    		$this->show_message('保存成功',site_url('md_manager/wdbb'),'1');
+    	}else{
+    		$this->show_message('保存失败','','1');
+    	}
+    }
+    
+    public function wdbb(){
+    	$projects = $this->sysconfig_model->get_projects();
+    	$this->cismarty->assign('projects',$projects);
+    	$data = $this->user_model->list_wdbb();
+    	$this->cismarty->assign('data',$data);
+    	$this->cismarty->display('md_wdbb.html');
+    }
+    
+    public function del_bb($id){
+    	$rs = $this->user_model->del_bb($id);
+    	echo $rs;
+    }
+    
+    public function re_bb($id){
+    	$rs = $this->user_model->re_bb($id);
+    	echo $rs;
+    }
+    
+    public function get_bz($id){
+    	$rs = $this->user_model->get_bz($id);
+    	echo $rs;
+    }
+    
+    public function save_bz(){
+    	$rs = $this->user_model->save_bz();
+    	echo $rs;
+    }
+    
+    public function save_re_bb(){
+    	$rs = $this->user_model->save_re_bb();
+    	echo $rs;
+    }
+    
 	
 }
 

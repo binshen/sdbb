@@ -1,4 +1,4 @@
-<?php /* Smarty version Smarty-3.1.16, created on 2015-07-03 09:22:15
+<?php /* Smarty version Smarty-3.1.16, created on 2015-07-06 11:54:54
          compiled from "application/views/md_manager.html" */ ?>
 <?php /*%%SmartyHeaderCode:79403918454a0e0fdc54e12-57755725%%*/if(!defined('SMARTY_DIR')) exit('no direct access allowed');
 $_valid = $_smarty_tpl->decodeProperties(array (
@@ -7,7 +7,7 @@ $_valid = $_smarty_tpl->decodeProperties(array (
     '85764bfcce298d168d506b02807fb3265c686bb2' => 
     array (
       0 => 'application/views/md_manager.html',
-      1 => 1433310361,
+      1 => 1436154892,
       2 => 'file',
     ),
   ),
@@ -25,7 +25,7 @@ $_valid = $_smarty_tpl->decodeProperties(array (
   ),
   'has_nocache_code' => false,
 ),false); /*/%%SmartyHeaderCode%%*/?>
-<?php if ($_valid && !is_callable('content_54a0e0fdcb2257_95395073')) {function content_54a0e0fdcb2257_95395073($_smarty_tpl) {?><?php if (!is_callable('smarty_function_site_url')) include '/var/www/html/sdbb/application/libraries/smarty/plugins/function.site_url.php';
+<?php if ($_valid && !is_callable('content_54a0e0fdcb2257_95395073')) {function content_54a0e0fdcb2257_95395073($_smarty_tpl) {?><?php if (!is_callable('smarty_function_site_url')) include '/www/sdbb/application/libraries/smarty/plugins/function.site_url.php';
 ?><!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
 <html xmlns="http://www.w3.org/1999/xhtml">
 <head>
@@ -73,6 +73,10 @@ js/jquery-v1.10.2.min.js" type="text/javascript"></script>
 "><div class="box_aqzx mgn_b_10">
     <h1>安全中心</h1>
     <P>密码修改、退出</P></div></a>
+    <a href="<?php echo smarty_function_site_url(array('url'=>'md_manager/wybb'),$_smarty_tpl);?>
+"><div class="box_dthtgl"><h1>我要报备</h1><P>我要报备</P></div></a>
+    <a href="<?php echo smarty_function_site_url(array('url'=>'md_manager/wdbb'),$_smarty_tpl);?>
+"><div class="box_shgl"><h1>我的报备</h1><P>我的报备</P></div></a>
   <div class="clr"></div>
 </div>
 <?php echo $_smarty_tpl->getSubTemplate ("foot.html", $_smarty_tpl->cache_id, $_smarty_tpl->compile_id, 0, null, array(), 0);?>

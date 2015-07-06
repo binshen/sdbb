@@ -1,4 +1,4 @@
-<?php /* Smarty version Smarty-3.1.16, created on 2015-07-03 09:13:34
+<?php /* Smarty version Smarty-3.1.16, created on 2015-07-06 11:32:34
          compiled from "application/views/projects.html" */ ?>
 <?php /*%%SmartyHeaderCode:182127699154a00a76c89579-65488210%%*/if(!defined('SMARTY_DIR')) exit('no direct access allowed');
 $_valid = $_smarty_tpl->decodeProperties(array (
@@ -7,7 +7,7 @@ $_valid = $_smarty_tpl->decodeProperties(array (
     '4356f8dffc57d7a34b05e243a49dc5cb6defe069' => 
     array (
       0 => 'application/views/projects.html',
-      1 => 1433321755,
+      1 => 1435891722,
       2 => 'file',
     ),
   ),
@@ -26,7 +26,7 @@ $_valid = $_smarty_tpl->decodeProperties(array (
   ),
   'has_nocache_code' => false,
 ),false); /*/%%SmartyHeaderCode%%*/?>
-<?php if ($_valid && !is_callable('content_54a00a76cf5900_61821958')) {function content_54a00a76cf5900_61821958($_smarty_tpl) {?><?php if (!is_callable('smarty_function_site_url')) include '/var/www/html/sdbb/application/libraries/smarty/plugins/function.site_url.php';
+<?php if ($_valid && !is_callable('content_54a00a76cf5900_61821958')) {function content_54a00a76cf5900_61821958($_smarty_tpl) {?><?php if (!is_callable('smarty_function_site_url')) include '/www/sdbb/application/libraries/smarty/plugins/function.site_url.php';
 ?><!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
 <html xmlns="http://www.w3.org/1999/xhtml">
 <head>

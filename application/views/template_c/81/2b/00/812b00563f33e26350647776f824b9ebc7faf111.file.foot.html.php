@@ -1,4 +1,4 @@
-<?php /* Smarty version Smarty-3.1.16, created on 2015-06-03 14:06:29
+<?php /* Smarty version Smarty-3.1.16, created on 2015-07-06 11:32:32
          compiled from "application/views/foot.html" */ ?>
 <?php /*%%SmartyHeaderCode:38758278654a000b0893b83-01938231%%*/if(!defined('SMARTY_DIR')) exit('no direct access allowed');
 $_valid = $_smarty_tpl->decodeProperties(array (
@@ -7,7 +7,7 @@ $_valid = $_smarty_tpl->decodeProperties(array (
     '812b00563f33e26350647776f824b9ebc7faf111' => 
     array (
       0 => 'application/views/foot.html',
-      1 => 1433310360,
+      1 => 1435891722,
       2 => 'file',
     ),
   ),
@@ -23,7 +23,7 @@ $_valid = $_smarty_tpl->decodeProperties(array (
   ),
   'has_nocache_code' => false,
 ),false); /*/%%SmartyHeaderCode%%*/?>
-<?php if ($_valid && !is_callable('content_54a000b08bc534_29710052')) {function content_54a000b08bc534_29710052($_smarty_tpl) {?><?php if (!is_callable('smarty_function_site_url')) include '/var/www/html/sdbb/application/libraries/smarty/plugins/function.site_url.php';
+<?php if ($_valid && !is_callable('content_54a000b08bc534_29710052')) {function content_54a000b08bc534_29710052($_smarty_tpl) {?><?php if (!is_callable('smarty_function_site_url')) include '/www/sdbb/application/libraries/smarty/plugins/function.site_url.php';
 ?>	<div id="bottom-nav">
         <a data-tab="index" href="<?php echo smarty_function_site_url(array('url'=>'index'),$_smarty_tpl);?>
 " <?php if ($_smarty_tpl->tpl_vars['flag']->value=='a') {?>class="active"<?php }?>><i class="ch-index"></i><span>楼盘</span></a>
