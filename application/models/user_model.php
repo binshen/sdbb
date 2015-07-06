@@ -548,6 +548,7 @@ class User_model extends MY_Model
     	}
     	
         $per_page=6;//每页显示多少调数据
+        $data['per_page'] = $per_page;
         $this->db->select('count(1) num');
     	$this->db->from($this->tables[2]);
     	if(!empty($md_uid)) {
