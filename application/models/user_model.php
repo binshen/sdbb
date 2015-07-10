@@ -254,6 +254,17 @@ class User_model extends MY_Model
     	if($this->input->post('project_id')){
     		$this->db->where('project_id',$this->input->post('project_id'));
     	}
+    	
+    	if($this->input->post('start_date')){
+    		$this->db->where('cdate >=',$this->input->post('start_date').'00:00:00');
+    	}
+    	if($this->input->post('end_date')){
+    		$this->db->where('cdate <=',$this->input->post('end_date').'23:59:59');
+    	}
+    	if($this->input->post('main_search')){
+    		$where = "(name LIKE '%" . $this->input->post('main_search') . "%' OR phone LIKE '%" . $this->input->post('main_search') . "%')";
+    		$this->db->where($where);
+    	}
 
         $rs_total = $this->db->get()->row();
         //总记录数
@@ -273,7 +284,7 @@ class User_model extends MY_Model
         $data['project_id']='';
         
         //list
-        $this->db->select("a.*,project project");
+        $this->db->select("a.*,b.project");
     	$this->db->from("{$this->tables[0]} a");
     	$this->db->join("{$this->tables[1]} b","a.project_id = b.id","left");
     	$this->db->where_in('project_id',$project_arr);
@@ -288,8 +299,23 @@ class User_model extends MY_Model
     		$data['project_id'] = $this->input->post('project_id');
     	}
 
+    	if($this->input->post('start_date')){
+    		$this->db->where('a.cdate >=',$this->input->post('start_date').'00:00:00');
+    	}
+    	if($this->input->post('end_date')){
+    		$this->db->where('a.cdate <=',$this->input->post('end_date').'23:59:59');
+    	}
+    	if($this->input->post('main_search')){
+    		$where = "(name LIKE '%" . $this->input->post('main_search') . "%' OR phone LIKE '%" . $this->input->post('main_search') . "%')";
+    		$this->db->where($where);
+    	}
+    	
+    	$data['start_date'] = $this->input->post('start_date');
+    	$data['end_date'] = $this->input->post('end_date');
+    	$data['main_search'] = $this->input->post('main_search');
+    	
         $this->db->limit($per_page, ($pageNum - 1) * $per_page );
-    	$this->db->order_by('cdate','desc');
+    	$this->db->order_by('a.cdate','desc');
         $data['res_list'] = $this->db->get()->result_array();
         return $data;
 	}
@@ -522,9 +548,12 @@ class User_model extends MY_Model
     	}
     	
         $per_page=6;//每页显示多少调数据
+        $data['per_page'] = $per_page;
         $this->db->select('count(1) num');
     	$this->db->from($this->tables[2]);
-    	$this->db->where_in('manager_id',$md_uid);
+    	if(!empty($md_uid)) {
+    		$this->db->where_in('manager_id',$md_uid);
+    	}
     	$this->db->group_by('manager_id');
         $rs_total = $this->db->get()->row();
         //总记录数
@@ -544,7 +573,9 @@ class User_model extends MY_Model
     	$this->db->select('b.*,sum(a.bb_count) s_bb_count,sum(a.dk_count) s_dk_count,sum(a.qy_count) s_qy_count');
     	$this->db->from("{$this->tables[2]} a");
     	$this->db->join("{$this->tables[2]} b","a.manager_id=b.id","left");
-    	$this->db->where_in('a.manager_id',$md_uid);
+    	if(!empty($md_uid)) {
+    		$this->db->where_in('a.manager_id',$md_uid);
+    	}
     	$this->db->group_by('a.manager_id');
     	$this->db->limit($per_page, ($pageNum - 1) * $per_page );
     	if($type == '1'){//综合排名
