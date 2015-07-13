@@ -60,13 +60,14 @@
   {if $row.status == '3'}<div class="icon_zt3"><b>已带看</b></div>{/if}
   {if $row.status == '4'}<div class="icon_zt4"><b>即将到期</b></div>{/if}
   {if $row.status == '5'}<div class="icon_zt5"><b>已签约</b></div>{/if}
-  <div class="xm"><b>{$row.name}</b>/<b>{$row.rel_name}</b></div>
+  <div class="xm"><b>{$row.name}</b></div>
   <div class="tel"><b>{$row.phone}</b></div>
 </div>
 <div class="xx hd">
 
   <ul>
     <li>创建时间：{$row.cdate}</li>
+    <li>业务员：{$row.rel_name}</li>
     <li>带看时间：{$row.ddate}</li>
     <li>所属项目：{$row.project}</li>
     <li>客户来源：{$row.target}</li>
