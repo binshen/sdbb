@@ -262,7 +262,7 @@ class User_model extends MY_Model
     		$this->db->where('cdate <=',$this->input->post('end_date').'23:59:59');
     	}
     	if($this->input->post('main_search')){
-    		$where = "(name LIKE '%" . $this->input->post('main_search') . "%' OR phone LIKE '%" . $this->input->post('main_search') . "%')";
+    		$where = "(name LIKE '%" . $this->input->post('main_search') . "%' OR a.phone LIKE '%" . $this->input->post('main_search') . "%')";
     		$this->db->where($where);
     	}
 
@@ -307,7 +307,7 @@ class User_model extends MY_Model
     		$this->db->where('a.cdate <=',$this->input->post('end_date').'23:59:59');
     	}
     	if($this->input->post('main_search')){
-    		$where = "(name LIKE '%" . $this->input->post('main_search') . "%' OR phone LIKE '%" . $this->input->post('main_search') . "%')";
+    		$where = "(name LIKE '%" . $this->input->post('main_search') . "%' OR a.phone LIKE '%" . $this->input->post('main_search') . "%')";
     		$this->db->where($where);
     	}
     	
