@@ -61,6 +61,7 @@
       <table border="0" class="table2">
         <tr>
           <th scope="col">姓 名</th>
+          <th scope="col">业务员</th>
           <th scope="col">电话号码</th>
           <th scope="col" >状 态</th>
           <th scope="col" >所属项目</th>
@@ -70,6 +71,7 @@
         {foreach from = $data.res_list item=row key=k}
         <tr {if $k is odd}class="grey_bg"{/if}>
           <td ><a href="javascript:detail('{$row.id}')"  class="blue_txt">{$row.name}</a></td>
+          <td >{$row.rel_name}</td>
           <td>{$row.phone}</td>
           <td>
 		  {if $row.status == '1'}已报备{/if}
