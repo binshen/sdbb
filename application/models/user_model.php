@@ -256,10 +256,10 @@ class User_model extends MY_Model
     	}
     	
     	if($this->input->post('start_date')){
-    		$this->db->where('cdate >=',$this->input->post('start_date').'00:00:00');
+    		$this->db->where('cdate >=',$this->input->post('start_date').' 00:00:00');
     	}
     	if($this->input->post('end_date')){
-    		$this->db->where('cdate <=',$this->input->post('end_date').'23:59:59');
+    		$this->db->where('cdate <=',$this->input->post('end_date').' 23:59:59');
     	}
     	if($this->input->post('main_search')){
     		$where = "(name LIKE '%" . $this->input->post('main_search') . "%' OR phone LIKE '%" . $this->input->post('main_search') . "%')";
@@ -301,10 +301,10 @@ class User_model extends MY_Model
     	}
 
     	if($this->input->post('start_date')){
-    		$this->db->where('a.cdate >=',$this->input->post('start_date').'00:00:00');
+    		$this->db->where('a.cdate >=',$this->input->post('start_date').' 00:00:00');
     	}
     	if($this->input->post('end_date')){
-    		$this->db->where('a.cdate <=',$this->input->post('end_date').'23:59:59');
+    		$this->db->where('a.cdate <=',$this->input->post('end_date').' 23:59:59');
     	}
     	if($this->input->post('main_search')){
     		$where = "(name LIKE '%" . $this->input->post('main_search') . "%' OR a.phone LIKE '%" . $this->input->post('main_search') . "%')";
