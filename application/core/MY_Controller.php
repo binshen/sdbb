@@ -35,6 +35,7 @@ class MY_Controller extends CI_Controller
 			$secret="c9df7b05ce5aec516f9893079d246dd4";
 			if(empty($_GET['code'])){
 			$url = 'http://'.$_SERVER['SERVER_NAME'].$_SERVER["REQUEST_URI"]; 
+			die($url);
 			$url = urlencode($url);
 			redirect("https://open.weixin.qq.com/connect/oauth2/authorize?appid=wx84455ea5b029beb2&redirect_uri={$url}&response_type=code&scope=snsapi_base&state=STATE#wechat_redirect");
 			}else{
