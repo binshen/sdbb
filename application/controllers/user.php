@@ -43,6 +43,7 @@ class User extends MY_Controller {
     }
     
     public function wybb($project_id=''){
+    	die('此版本即将关闭，目前不支持报备，请至微信新版报备');
     	if($this->session->userdata('admin_group') != '3'){
     		$this->show_message('权限不足','','1');
     	}
