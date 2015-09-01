@@ -27,14 +27,18 @@ class Kf_manager extends MY_Controller {
         	redirect('wl_manager');//外联经理
         if($this->session->userdata('admin_group') === '5')
         	redirect('md_manager');//门店经理
+        	
+        	
+		$this->cismarty->assign('rel_name',$this->session->userdata('rel_name'));
+		$this->cismarty->assign('flag','d');
+		
     }
     
     public function index()
     {
-    	$this->m_list_bb();
-    	//$data = $this->user_model->get_kf_data();
-    	//$this->cismarty->assign('all_count',$data);
-    	//$this->cismarty->display('kf_manager.html');
+    	$data = $this->user_model->get_kf_data();
+    	$this->cismarty->assign('all_count',$data);
+    	$this->cismarty->display('kf_manager.html');
     }
     
     public function m_list_bb(){
